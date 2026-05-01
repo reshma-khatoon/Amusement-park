@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKY PARK - Next Level Fun</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-rocket"></i> SKY PARK
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#rides" class="nav-link">Rides</a>
+                <a href="#activities" class="nav-link">Activities</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#booking" class="nav-link btn-book">Book Now</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="slide-content">
+                    <h1>Welcome to SKY PARK</h1>
+                    <p>Where Dreams Meet Reality 🎢</p>
+                    <button class="cta-btn" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">
+                        Get Tickets Now <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="slide-content">
+                    <h1>Unleash the Adventure</h1>
+                    <p>Experience Thrills Like Never Before 🚀</p>
+                    <button class="cta-btn" onclick="document.getElementById('rides').scrollIntoView({ behavior: 'smooth' })">
+                        Explore Rides <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="slide-content">
+                    <h1>Create Unforgettable Memories</h1>
+                    <p>Fun for the Whole Squad 👥</p>
+                    <button class="cta-btn" onclick="document.getElementById('activities').scrollIntoView({ behavior: 'smooth' })">
+                        Discover Activities <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <button class="slider-btn prev" onclick="changeSlide(-1)" title="Previous slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" onclick="changeSlide(1)" title="Next slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats">
+        <div class="stat-card">
+            <h3>50+</h3>
+            <p>Thrilling Rides</p>
+        </div>
+        <div class="stat-card">
+            <h3>2M+</h3>
+            <p>Happy Visitors</p>
+        </div>
+        <div class="stat-card">
+            <h3>365</h3>
+            <p>Days Open</p>
+        </div>
+        <div class="stat-card">
+            <h3>24/7</h3>
+            <p>Support Available</p>
+        </div>
+    </section>
+
+    <!-- Rides Section -->
+    <section id="rides" class="rides">
+        <div class="section-header">
+            <h2>Featured Rides</h2>
+            <p>Get Your Adrenaline Rush 🎢</p>
+        </div>
+        <div class="rides-grid">
+            <div class="ride-card">
+<div class="ride-image">
+<img src="1.jpg" alt="The Titan" onerror="this.src='Titan'">
+                    <span class="difficulty extreme">EXTREME</span>
+                </div>
+                <div class="ride-info">
+                    <h3>The Titan</h3>
+                    <p class="description">The world's fastest roller coaster with 200mph speeds and gravity-defying loops.</p>
+                    <div class="ride-stats">
+                        <span><i class="fas fa-ruler"></i> 450m</span>
+                        <span><i class="fas fa-tachometer-alt"></i> 200mph</span>
+                    </div>
+                    <button class="learn-btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="ride-card">
+                <div class="ride-image">
+<img src="2.webp" alt="Sky Spin" onerror="this.src='Sky+Spin'">
+                    <span class="difficulty hard">HARD</span>
+                </div>
+                <div class="ride-info">
+                    <h3>Sky Spin</h3>
+                    <p class="description">Rotate 360 degrees while flying 300 feet in the air. Perfect for thrill-seekers!</p>
+                    <div class="ride-stats">
+                        <span><i class="fas fa-ruler"></i> 300ft</span>
+                        <span><i class="fas fa-clock"></i> 3 min</span>
+                    </div>
+                    <button class="learn-btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="ride-card">
+                <div class="ride-image">
+<img src="3.webp" alt="Wave Rider" onerror="this.src='Wave+Rider'">
+                    <span class="difficulty medium">MEDIUM</span>
+                </div>
+                <div class="ride-info">
+                    <h3>Wave Rider</h3>
+                    <p class="description">Surf the biggest artificial waves ever created. Feel the ocean at the park!</p>
+                    <div class="ride-stats">
+                        <span><i class="fas fa-water"></i> 50ft Waves</span>
+                        <span><i class="fas fa-users"></i> 100 per ride</span>
+                    </div>
+                    <button class="learn-btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="ride-card">
+                <div class="ride-image">
+<img src="4.jpg" alt="Cyber Quest" onerror="this.src='Cyber+Quest'">
+                    <span class="difficulty hard">HARD</span>
+                </div>
+                <div class="ride-info">
+                    <h3>Cyber Quest</h3>
+                    <p class="description">Experience the future with VR-enabled ride technology. Mind-bending adventure awaits!</p>
+                    <div class="ride-stats">
+                        <span><i class="fas fa-headset"></i> VR Ready</span>
+                        <span><i class="fas fa-star"></i> 4.9/5</span>
+                    </div>
+                    <button class="learn-btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="ride-card">
+                <div class="ride-image">
+<img src="5.jpg" alt="Thunder Loop" onerror="this.src='Thunder+Loop'">
+                    <span class="difficulty medium">MEDIUM</span>
+                </div>
+                <div class="ride-info">
+                    <h3>Thunder Loop</h3>
+                    <p class="description">Classic coaster with intense loops and drops. The favorite of thousands!</p>
+                    <div class="ride-stats">
+                        <span><i class="fas fa-ruler"></i> 180m</span>
+                        <span><i class="fas fa-heart"></i> Fan Favorite</span>
+                    </div>
+                    <button class="learn-btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="ride-card">
+                <div class="ride-image">
+<img src="6.webp" alt="Dream Drop" onerror="this.src='Dream+Drop'">
+                    <span class="difficulty easy">EASY</span>
+                </div>
+                <div class="ride-info">
+                    <h3>Dream Drop</h3>
+                    <p class="description">Perfect for families! A gentle ride through magical landscapes and animation.</p>
+                    <div class="ride-stats">
+                        <span><i class="fas fa-users"></i> All Ages</span>
+                        <span><i class="fas fa-smile"></i> Kid Approved</span>
+                    </div>
+                    <button class="learn-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <div class="section-header">
+            <h2>Beyond the Rides</h2>
+            <p>More Ways to Level Up Your Fun 🎮</p>
+        </div>
+        <div class="activities-grid">
+            <div class="activity-card">
+                <div class="activity-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h3>Arcade Zone</h3>
+                <p>500+ gaming stations with the latest games. Win big prizes! 🎯</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <h3>Live Performances</h3>
+                <p>Daily shows featuring international artists and dancers. 🎭</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-icon">
+                    <i class="fas fa-pizza-slice"></i>
+                </div>
+                <h3>Food Court</h3>
+                <p>Global cuisine from street food to gourmet. Fuel your adventure! 🍜</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-icon">
+                    <i class="fas fa-person-hiking"></i>
+                </div>
+                <h3>Adventure Trail</h3>
+                <p>Zip-lines, rope courses, and obstacle challenges. Conquer the wilderness! 🏔️</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-icon">
+                    <i class="fas fa-water"></i>
+                </div>
+                <h3>Water Park</h3>
+                <p>Splash pads, lazy rivers, and water slides. Cool off in style! 💦</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h3>Photo Spots</h3>
+                <p>Instagram-worthy locations throughout the park. Capture the vibes! 📸</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="section-header">
+            <h2>Upcoming Events</h2>
+            <p>Don't Miss Out on the Hype 🔥</p>
+        </div>
+        <div class="events-container">
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">15</span>
+                    <span class="month">MAY</span>
+                </div>
+                <div class="event-details">
+                    <h3>Summer Festival 2026</h3>
+                    <p>Three days of non-stop entertainment, special performances, and exclusive discounts!</p>
+                    <div class="event-meta">
+                        <span><i class="fas fa-users"></i> 50K+ Expected</span>
+                        <span><i class="fas fa-music"></i> Live DJ</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">20</span>
+                    <span class="month">JUN</span>
+                </div>
+                <div class="event-details">
+                    <h3>Night Glow Extravaganza</h3>
+                    <p>Experience the park like never before with spectacular light shows and neon attractions!</p>
+                    <div class="event-meta">
+                        <span><i class="fas fa-star"></i> Exclusive</span>
+                        <span><i class="fas fa-clock"></i> 6PM - 2AM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">10</span>
+                    <span class="month">JUL</span>
+                </div>
+                <div class="event-details">
+                    <h3>Creator Meetup Weekend</h3>
+                    <p>Meet your favorite content creators, participate in challenges, and win amazing prizes!</p>
+                    <div class="event-meta">
+                        <span><i class="fas fa-video"></i> 100+ Creators</span>
+                        <span><i class="fas fa-gift"></i> Prize Pool</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section
+    <section id="gallery" class="video-section">
+        <div class="section-header">
+            <h2>Experience NEXUS PARK</h2>
+            <p>See What Visitors Are Saying 🎬</p>
+        </div>
+        <div class="video-grid">
+            <a href="relatedvideo.htm" target="_blank" class="video-card">
+                <div class="video-thumbnail">
+<img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=400&h=300&fit=crop" alt="Video 1" onerror="this.src='https://placehold.co/400x300/ff006e/ffffff?text=Video+1'">
+                    <i class="fas fa-play"></i>
+                </div>
+                <h3>The Titan Ride Experience</h3>
+            </a>
+            <a href="relatedvideo (1).htm" target="_blank" class="video-card">
+                <div class="video-thumbnail">
+<img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=300&fit=crop" alt="Video 2" onerror="this.src='https://placehold.co/400x300/ff006e/ffffff?text=Video+2'">
+                    <i class="fas fa-play"></i>
+                </div>
+                <h3>Family Fun Day at NEXUS</h3>
+            </a>
+            <a href="relatedvideo (2).htm" target="_blank" class="video-card">
+                <div class="video-thumbnail">
+<img src="https://images.pexels.com/photos/1409380/pexels-photo-1409380.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Video 3">
+                    <i class="fas fa-play"></i>
+                </div>
+                <h3>Behind the Scenes Tour</h3>
+            </a>
+        </div>
+    </section> -->
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h2>What Our Visitors Say</h2>
+            <p>Real Reviews from Real Adventures 💬</p>
+        </div>
+        <div class="testimonials-slider">
+            <div class="testimonial-card active">
+                <div class="testimonial-header">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="User">
+                    <div>
+                        <h4>Alex Chen</h4>
+                        <p>Content Creator</p>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"NEXUS PARK is absolutely insane! The vibes are immaculate and every ride is a certified banger. Already planning my next visit! 🔥"</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://i.pravatar.cc/150?img=2" alt="User">
+                    <div>
+                        <h4>Jordan Martinez</h4>
+                        <p>Student</p>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"Went with friends and had the best day ever! Cyber Quest is next level and the photo spots are chef's kiss. 10/10 recommend! 📸"</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://i.pravatar.cc/150?img=3" alt="User">
+                    <div>
+                        <h4>Sarah Kim</h4>
+                        <p>Family Adventurer</p>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"My kids loved Dream Drop and the arcade zone. We spent the whole day here and didn't want to leave. Coming back next month! 🎉"</p>
+            </div>
+        </div>
+        <div class="testimonial-controls">
+            <button onclick="changeTestimonial(-1)" title="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+            <button onclick="changeTestimonial(1)" title="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="booking-container">
+            <div class="booking-header">
+                <h2>Get Your Tickets Today! 🎟️</h2>
+                <p>Choose Your Adventure Package</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Day Pass</h3>
+                    <div class="price">$49</div>
+                    <p class="price-desc">Per Person</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Access to all rides</li>
+                        <li><i class="fas fa-check"></i> One free meal voucher</li>
+                        <li><i class="fas fa-check"></i> Free parking</li>
+                        <li><i class="fas fa-times"></i> Fast pass not included</li>
+                    </ul>
+                    <button class="book-btn">Book Day Pass</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <h3>Weekend Blast</h3>
+                    <div class="price">$129</div>
+                    <p class="price-desc">Per Person</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> 2-day access</li>
+                        <li><i class="fas fa-check"></i> Priority fast pass</li>
+                        <li><i class="fas fa-check"></i> $50 food credit</li>
+                        <li><i class="fas fa-check"></i> Free merchandise</li>
+                    </ul>
+                    <button class="book-btn">Book Now 🚀</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>VIP Experience</h3>
+                    <div class="price">$199</div>
+                    <p class="price-desc">Per Person</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> 3-day unlimited access</li>
+                        <li><i class="fas fa-check"></i> VIP lounge access</li>
+                        <li><i class="fas fa-check"></i> $100 food credit</li>
+                        <li><i class="fas fa-check"></i> Priority customer service</li>
+                    </ul>
+                    <button class="book-btn">Book VIP Pass</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Stay Updated! 📬</h2>
+            <p>Get exclusive deals, early event access, and insider tips delivered to your inbox</p>
+            <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>NEXUS PARK</h4>
+                <p>Experience the future of fun and entertainment.</p>
+                <div class="social-links">
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rides">Rides</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#events">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Group Bookings</a></li>
+                    <li><a href="#">Accessibility Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Visit Us</h4>
+                <p>📍 123 Adventure Lane, Fun City, FC 12345</p>
+                <p>📞 +1 (555) 123-4567</p>
+                <p>📧 info@nexuspark.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NEXUS PARK. All rights reserved. Made with 💜 for thrill-seekers.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
