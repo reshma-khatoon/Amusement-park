@@ -17,10 +17,24 @@ document.querySelectorAll('.nav-link').forEach(link => {
 let currentSlide = 0;
 const heroSlides = document.querySelectorAll('.hero-slide');
 const totalSlides = heroSlides.length;
+const hero = document.querySelector('.hero');
+const heroBackgrounds = [
+    'ramadan-background-design-template-with-mosque_1126269-179.avif',
+    'ferris-wheel-theme-park-amusement-park-image_1325692-7935.jpg',
+    '20b4f480-d367-4172-acd3-a07facf195bf-Kings_Island_Adventure_Port_-_Sol_Spin.webp',
+    '1.jpg'
+];
+let currentBackground = 0;
+
+function updateHeroBackground(index) {
+    const bgIndex = index % heroBackgrounds.length;
+    hero.style.backgroundImage = `url("${heroBackgrounds[bgIndex]}")`;
+}
 
 function showSlide(n) {
     heroSlides.forEach(slide => slide.classList.remove('active'));
     heroSlides[n].classList.add('active');
+    updateHeroBackground(n);
 }
 
 function changeSlide(direction) {
@@ -28,6 +42,17 @@ function changeSlide(direction) {
     if (currentSlide >= totalSlides) currentSlide = 0;
     if (currentSlide < 0) currentSlide = totalSlides - 1;
     showSlide(currentSlide);
+}
+
+function cycleHeroBackground() {
+    currentBackground = (currentBackground + 1) % heroBackgrounds.length;
+    updateHeroBackground(currentBackground);
+}
+
+// Initialize hero background and start looping backgrounds.
+if (hero) {
+    updateHeroBackground(currentBackground);
+    setInterval(cycleHeroBackground, 7000);
 }
 
 // Auto-slide every 5 seconds
