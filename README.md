@@ -1,4 +1,4 @@
-# 🎢 NEXUS PARK - Amusement Park Website
+# 🎢 SKY PARK - Amusement Park Website
 
 A modern, Gen-Z friendly, fully responsive amusement park website with stunning UI/UX design.
 
@@ -47,12 +47,7 @@ A modern, Gen-Z friendly, fully responsive amusement park website with stunning 
    - Meta information (attendees, special features)
    - Gradient date badges
 
-7. **Video Gallery** 🎬
-   - 3 featured video cards
-   - Play button overlay
-   - Smooth image scaling on hover
-
-8. **Testimonials** 💬
+7. **Testimonials** 💬
    - Carousel-style testimonials
    - Star ratings
    - User avatars
@@ -166,7 +161,7 @@ Replace the rocket icon in the navbar logo with your own image:
 
 ```html
 <div class="logo">
-    <img src="your-logo.png" alt="Logo"> NEXUS PARK
+    <img src="your-logo.png" alt="Logo"> SKY PARK
 </div>
 ```
 
@@ -281,10 +276,10 @@ document.querySelectorAll('.book-btn').forEach(btn => {
 
 ```html
 <!-- Add to <head> -->
-<meta name="description" content="NEXUS PARK - Experience thrilling rides and unforgettable adventures!">
+<meta name="description" content="SKY PARK - Experience thrilling rides and unforgettable adventures!">
 <meta name="keywords" content="amusement park, rides, entertainment, family fun">
 <meta name="theme-color" content="#ff006e">
-<meta property="og:title" content="NEXUS PARK - Next Level Fun">
+<meta property="og:title" content="SKY PARK - Next Level Fun">
 <meta property="og:description" content="Where Dreams Meet Reality">
 <meta property="og:image" content="og-image.jpg">
 ```
@@ -326,8 +321,8 @@ git push origin main
 
 For issues or questions:
 - 📞 Phone: +1 (555) 123-4567
-- 📧 Email: info@nexuspark.com
-- 🌐 Website: www.nexuspark.com
+- 📧 Email: info@skypark.com
+- 🌐 Website: www.skypark.com
 
 ## 📜 License
 
